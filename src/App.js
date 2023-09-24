@@ -2,10 +2,7 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import MainContent from './Components/MainContent';
-import { useState, useEffect } from 'react';
-
-
-
+import ScrollToTopButton from './Components/ScrollToTopButton';
 
 function App() {
   return (
@@ -13,6 +10,7 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
