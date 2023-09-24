@@ -59,10 +59,10 @@ const PricingSection = () => {
         <section className="i pg fh rm ji gp uq">
             {/* Add your images here */}
             {/* <img src={shape06} alt="Shape" class="h aa y" /> */}
-            <img src={shape03} alt="Shape" class="h ca u" />
-            <img src={shape07} alt="Shape" class="h w da ee" />
-            <img src={shape12} alt="Shape" class="h p s" />
-            <img src={shape13} alt="Shape" class="h r q" />
+            <img src={shape03} alt="Shape" className="h ca u" />
+            <img src={shape07} alt="Shape" className="h w da ee" />
+            <img src={shape12} alt="Shape" className="h p s" />
+            <img src={shape13} alt="Shape" className="h r q" />
             <div>
                 <div className="animate_top bb ze rj ki xn vq">
                     <h2 className='fk vj pr kk wm on/5 gq/2 bb _b'>We Offer Great Affordable Premium Prices.</h2>
@@ -77,8 +77,8 @@ const PricingSection = () => {
                 <span className="ek kk wm">Bill Monthly</span>
                 <button className="i rg gm" onClick={toggleBilling}>
                     {/* Add your toggle switch UI here */}
-                    <div class="fe id bl gh rg xk outline-none"></div>
-                    <div class={`h vc wf xf ge jd cl jl ml mf hh rg yk ea fa ${billPlan === 'monthly' ? 'ff' : 'gf'}`}></div>
+                    <div className="fe id bl gh rg xk outline-none"></div>
+                    <div className={`h vc wf xf ge jd cl jl ml mf hh rg yk ea fa ${billPlan === 'monthly' ? 'ff' : 'gf'}`}></div>
                 </button>
                 <span className="ek kk wm">Bill Annually</span>
             </div>

@@ -6,20 +6,20 @@ function Footer() {
 return (
 
     <footer>
-        <div class="bb ze ki xn 2xl:ud-px-0">
+        <div className="bb ze ki xn 2xl:ud-px-0">
 
-            <div class="ji gp">
-                <div class="tc uf ap gg fp">
-                    <div class="animate_top zd/2 to/4">
+            <div className="ji gp">
+                <div className="tc uf ap gg fp">
+                    <div className="animate_top zd/2 to/4">
                         <a href="index.html">
-                            <img src={logoLight} alt="Logo" class="om" />
-                            <img src={logoDark} alt="Logo" class="xc nm" />
+                            <img src={logoLight} alt="Logo" className="om" />
+                            <img src={logoDark} alt="Logo" className="xc nm" />
                         </a>
-                        <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul class="tc wf cg">
+                        <p className="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul className="tc wf cg">
                             <li>
                                 <a href="#">
-                                    <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    <svg className="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_48_1499)">
                                             <path
@@ -36,7 +36,7 @@ return (
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    <svg className="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_48_1502)">
                                             <path
@@ -53,7 +53,7 @@ return (
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    <svg className="vh ul cl il" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_48_1505)">
                                             <path
@@ -70,7 +70,7 @@ return (
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="vh ul cl il" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg className="vh ul cl il" width="24" height="24" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_48_1508)">
                                             <path
@@ -86,48 +86,48 @@ return (
                             </li>
                         </ul>
                     </div>
-                    <div class="vd ro tc sf rn un gg vn">
-                        <div class="animate_top">
-                            <h4 class="kk wm tj ec">Quick Links</h4>
+                    <div className="vd ro tc sf rn un gg vn">
+                        <div className="animate_top">
+                            <h4 className="kk wm tj ec">Quick Links</h4>
                             <ul>
-                                <li><a href="#" class="sc xl vb">Home</a></li>
-                                <li><a href="#" class="sc xl vb">Product</a></li>
+                                <li><a href="#" className="sc xl vb">Home</a></li>
+                                <li><a href="#" className="sc xl vb">Product</a></li>
                                 <li>
-                                    <a href="#" class="sc xl vb">
+                                    <a href="#" className="sc xl vb">
                                         Careers
-                                        <span class="sc ek uj lk nh rg zi _i nc">Hiring</span>
+                                        <span className="sc ek uj lk nh rg zi _i nc">Hiring</span>
                                     </a>
                                 </li>
-                                <li><a href="#" class="sc xl vb">Pricing</a></li>
+                                <li><a href="#" className="sc xl vb">Pricing</a></li>
                             </ul>
                         </div>
-                        <div class="animate_top">
-                            <h4 class="kk wm tj ec">Services</h4>
+                        <div className="animate_top">
+                            <h4 className="kk wm tj ec">Services</h4>
                             <ul>
-                                <li><a href="#" class="sc xl vb">Web Development</a></li>
-                                <li><a href="#" class="sc xl vb">Graphics Design</a></li>
-                                <li><a href="#" class="sc xl vb">Digital Marketing</a></li>
-                                <li><a href="#" class="sc xl vb">Ui/Ux Design</a></li>
+                                <li><a href="#" className="sc xl vb">Web Development</a></li>
+                                <li><a href="#" className="sc xl vb">Graphics Design</a></li>
+                                <li><a href="#" className="sc xl vb">Digital Marketing</a></li>
+                                <li><a href="#" className="sc xl vb">Ui/Ux Design</a></li>
                             </ul>
                         </div>
-                        <div class="animate_top">
-                            <h4 class="kk wm tj ec">Support</h4>
+                        <div className="animate_top">
+                            <h4 className="kk wm tj ec">Support</h4>
                             <ul>
-                                <li><a href="#" class="sc xl vb">Company</a></li>
-                                <li><a href="#" class="sc xl vb">Press media</a></li>
-                                <li><a href="#" class="sc xl vb">Our Blog</a></li>
-                                <li><a href="#" class="sc xl vb">Contact Us</a></li>
+                                <li><a href="#" className="sc xl vb">Company</a></li>
+                                <li><a href="#" className="sc xl vb">Press media</a></li>
+                                <li><a href="#" className="sc xl vb">Our Blog</a></li>
+                                <li><a href="#" className="sc xl vb">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="animate_top">
-                            <h4 class="kk wm tj ec">Newsletter</h4>
-                            <p class="ac qe">Subscribe to receive future updates</p>
+                        <div className="animate_top">
+                            <h4 className="kk wm tj ec">Newsletter</h4>
+                            <p className="ac qe">Subscribe to receive future updates</p>
                             <form action="https://formbold.com/s/unique_form_id" method="POST">
-                                <div class="i">
+                                <div className="i">
                                     <input type="text" placeholder="Email address"
-                                        class="vd sm _g ch pm vk xm rg gm dm dn gi mi" />
-                                    <button class="h q fi">
-                                        <svg class="th vm ul" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        className="vd sm _g ch pm vk xm rg gm dm dn gi mi" />
+                                    <button className="h q fi">
+                                        <svg className="th vm ul" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_48_1487)">
                                                 <path
@@ -149,15 +149,15 @@ return (
             </div>
 
 
-            <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
-                <div class="animate_top">
-                    <ul class="tc wf gg">
-                        <li><a href="#" class="xl">English</a></li>
-                        <li><a href="#" class="xl">Privacy Policy</a></li>
-                        <li><a href="#" class="xl">Support</a></li>
+            <div className="bh ch pm tc uf sf yo wf xf ap cg fp bj">
+                <div className="animate_top">
+                    <ul className="tc wf gg">
+                        <li><a href="#" className="xl">English</a></li>
+                        <li><a href="#" className="xl">Privacy Policy</a></li>
+                        <li><a href="#" className="xl">Support</a></li>
                     </ul>
                 </div>
-                <div class="animate_top">
+                <div className="animate_top">
                     <p>&copy; 2025 Base. All rights reserved</p>
                 </div>
             </div>

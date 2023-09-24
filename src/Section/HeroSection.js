@@ -19,30 +19,30 @@ import icon03 from './../images/icon-03.svg'
 function HeroSection() {
     return (
         <>
-            <section class="gj do ir hj sp jr i pg">
+            <section className="gj do ir hj sp jr i pg">
 
-                <div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
-                    <img src={shape01} alt="shape" class="xc 2xl:ud-block h t -ud-left-[10%] ua" />
-                    <img src={shape02} alt="shape" class="xc 2xl:ud-block h u p va" />
-                    <img src={shape03} alt="shape" class="xc 2xl:ud-block h v w va" />
-                    <img src={shape04} alt="shape" class="h q r" />
-                    <img src={hero} alt="Woman" class="h q r ua" />
+                <div className="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
+                    <img src={shape01} alt="shape" className="xc 2xl:ud-block h t -ud-left-[10%] ua" />
+                    <img src={shape02} alt="shape" className="xc 2xl:ud-block h u p va" />
+                    <img src={shape03} alt="shape" className="xc 2xl:ud-block h v w va" />
+                    <img src={shape04} alt="shape" className="h q r" />
+                    <img src={hero} alt="Woman" className="h q r ua" />
                 </div>
 
-                <div class="bb ze ki xn 2xl:ud-px-0">
-                    <div class="tc _o">
-                        <div class="animate_left jn/2">
-                            <h1 class="fk vj zp or kk wm wb">We specialize in UI/UX, Web Development, Digital Marketing.
+                <div className="bb ze ki xn 2xl:ud-px-0">
+                    <div className="tc _o">
+                        <div className="animate_left jn/2">
+                            <h1 className="fk vj zp or kk wm wb">We specialize in UI/UX, Web Development, Digital Marketing.
                             </h1>
-                            <p class="fq">
+                            <p className="fq">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris.
                                 Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
                             </p>
-                            <div class="tc tf yo zf mb">
-                                <a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
-                                <span class="tc sf">
-                                    <a href="#" class="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
-                                    <span class="inline-block">For any question or concern</span>
+                            <div className="tc tf yo zf mb">
+                                <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
+                                <span className="tc sf">
+                                    <a href="#" className="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
+                                    <span className="inline-block">For any question or concern</span>
                                 </span>
                             </div>
                         </div>
@@ -51,35 +51,35 @@ function HeroSection() {
             </section>
 
             <section id="features">
-                <div class="bb ze ki yn 2xl:ud-px-12.5">
-                    <div class="tc uf zo xf ap zf bp mq">
+                <div className="bb ze ki yn 2xl:ud-px-12.5">
+                    <div className="tc uf zo xf ap zf bp mq">
 
-                        <div class="animate_top kn to/3 tc cg oq">
-                            <div class="tc wf xf cf ae cd rg mh">
+                        <div className="animate_top kn to/3 tc cg oq">
+                            <div className="tc wf xf cf ae cd rg mh">
                                 <img src={icon01} alt="Icon" />
                             </div>
                             <div>
-                                <h4 class="ek yj go kk wm xb">24/7 Support</h4>
+                                <h4 className="ek yj go kk wm xb">24/7 Support</h4>
                                 <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
                             </div>
                         </div>
 
-                        <div class="animate_top kn to/3 tc cg oq">
-                            <div class="tc wf xf cf ae cd rg nh">
+                        <div className="animate_top kn to/3 tc cg oq">
+                            <div className="tc wf xf cf ae cd rg nh">
                                 <img src={icon02} alt="Icon" />
                             </div>
                             <div>
-                                <h4 class="ek yj go kk wm xb">Take Ownership</h4>
+                                <h4 className="ek yj go kk wm xb">Take Ownership</h4>
                                 <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
                             </div>
                         </div>
 
-                        <div class="animate_top kn to/3 tc cg oq">
-                            <div class="tc wf xf cf ae cd rg oh">
+                        <div className="animate_top kn to/3 tc cg oq">
+                            <div className="tc wf xf cf ae cd rg oh">
                                 <img src={icon03} alt="Icon" />
                             </div>
                             <div>
-                                <h4 class="ek yj go kk wm xb">Team Work</h4>
+                                <h4 className="ek yj go kk wm xb">Team Work</h4>
                                 <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
                             </div>
                         </div>
@@ -87,34 +87,34 @@ function HeroSection() {
                 </div>
             </section>
 
-            <section id='features' class="ji gp uq 2xl:ud-py-35 pg">
-                <div class="bb ze ki xn wq">
-                    <div class="tc wf gg qq">
+            <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
+                <div className="bb ze ki xn wq">
+                    <div className="tc wf gg qq">
 
-                        <div class="animate_left xc gn gg jn/2 i">
+                        <div className="animate_left xc gn gg jn/2 i">
                             <div>
-                                <img src={shape05} alt="Shape" class="h -ud-left-5 x" />
-                                <img src={about01} alt="About" class="ib" />
+                                <img src={shape05} alt="Shape" className="h -ud-left-5 x" />
+                                <img src={about01} alt="About" className="ib" />
                                 <img src={about02} alt="About" />
                             </div>
                             <div>
                                 <img src={shape06} alt="Shape" />
-                                <img src={shape03} alt="About" class="ob gb" />
-                                <img src={shape07} alt="Shape" class="bb" />
+                                <img src={shape03} alt="About" className="ob gb" />
+                                <img src={shape07} alt="Shape" className="bb" />
                             </div>
                         </div>
 
-                        <div class="animate_right jn/2">
-                            <h4 class="ek yj mk gb">Why Choose Us</h4>
-                            <h2 class="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
-                            <p class="uo">It is a long established fact that a reader will be distracted by the readable
+                        <div className="animate_right jn/2">
+                            <h4 className="ek yj mk gb">Why Choose Us</h4>
+                            <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
+                            <p className="uo">It is a long established fact that a reader will be distracted by the readable
                                 content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
-                            <a href="#" data-fslightbox class="vc wf hg mb">
-                                <span class="tc wf xf be dd rg i gh ua">
-                                    <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
+                            <a href="#" data-fslightbox className="vc wf hg mb">
+                                <span className="tc wf xf be dd rg i gh ua">
+                                    <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
                                     <img src={iconPlay} alt="Play" />
                                 </span>
-                                <span class="kk">SEE HOW WE WORK</span>
+                                <span className="kk">SEE HOW WE WORK</span>
                             </a>
                         </div>
                     </div>
