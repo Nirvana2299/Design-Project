@@ -58,7 +58,7 @@ const PricingSection = () => {
     return (
         <section className="i pg fh rm ji gp uq">
             {/* Add your images here */}
-            <img src={shape06} alt="Shape" class="h aa y" />
+            {/* <img src={shape06} alt="Shape" class="h aa y" /> */}
             <img src={shape03} alt="Shape" class="h ca u" />
             <img src={shape07} alt="Shape" class="h w da ee" />
             <img src={shape12} alt="Shape" class="h p s" />

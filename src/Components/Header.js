@@ -9,7 +9,6 @@ function Header() {
     const [stickyMenu, setStickyMenu] = useState(false);
     const [navigationOpen, setNavigationOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [scrollTop, setScrollTop] = useState(false);
 
     useEffect(() => {
         function handleScroll() {
