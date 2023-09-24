@@ -87,7 +87,7 @@ function HeroSection() {
                 </div>
             </section>
 
-            <section class="ji gp uq 2xl:ud-py-35 pg">
+            <section id='features' class="ji gp uq 2xl:ud-py-35 pg">
                 <div class="bb ze ki xn wq">
                     <div class="tc wf gg qq">
 

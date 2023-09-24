@@ -11,23 +11,9 @@ function Header() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [scrollTop, setScrollTop] = useState(false);
 
-    // Initialize darkMode from localStorage on component mount
-    // useEffect(() => {
-    //     const storedDarkMode = localStorage.getItem('darkMode');
-    //     if (storedDarkMode !== null) {
-    //         setDarkMode(JSON.parse(storedDarkMode));
-    //     }
-    // }, []);
-
-    // Watch for changes in darkMode and update localStorage
-    // useEffect(() => {
-    //     localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    // }, [darkMode]);
-
-    // Handle scrolling to toggle stickyMenu
     useEffect(() => {
         function handleScroll() {
-            setStickyMenu(window.pageYOffset > 20);
+            setStickyMenu(window.scrollY > 20);
         }
 
         window.addEventListener('scroll', handleScroll);
@@ -37,10 +23,6 @@ function Header() {
         };
     }, []);
 
-    // Toggle darkMode
-    // const toggleDarkMode = () => {
-    //     setDarkMode(!darkMode);
-    // };
 
     return (
         <header
@@ -71,8 +53,8 @@ function Header() {
                 <div className={`vd wo/4 sd qo f ho oo wf yf ${navigationOpen ? 'd hh rm sr td ud qg ug jc yh' : ''}`}>
                     <nav>
                         <ul className="tc _o sf yo cg ep">
-                            <li><a href="index.html" className={`xl ${page === 'home' ? 'mk' : ''}`}>Home</a></li>
-                            <li><a href="index.html#features" className="xl">Features</a></li>
+                            <li><a href="#" className={`xl ${page === 'home' ? 'mk' : ''}`}>Home</a></li>
+                            <li><a href="#features" className="xl">Features</a></li>
                             <li className="c i">
                                 <a
                                     href="#"
@@ -92,7 +74,7 @@ function Header() {
                                     <li><a href="404.html" className={`xl ${page === '404' ? 'mk' : ''}`}>404</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" className="xl">Support</a></li>
+                            <li><a href="#support" className="xl">Support</a></li>
                         </ul>
                     </nav>
                     <div className="tc wf ig pb no">
