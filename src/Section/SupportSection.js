@@ -102,19 +102,19 @@ function SupportSection() {
                             <div className="tc sf yo ap zf ep qb">
                                 <div className="vd to/2">
                                     <label className="rc ac" htmlFor="fullname">Full name</label>
-                                    <input type="text" name="fullname" id="fullname" placeholder="Devid Wonder"
+                                    <input type="text" name="fullname" id="fullname" placeholder="Devid Wonder" autoComplete='name'
                                         className="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                                 </div>
                                 <div className="vd to/2">
                                     <label className="rc ac" htmlFor="email">Email address</label>
-                                    <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                                    <input type="email" name="email" id="email" placeholder="example@gmail.com" autoComplete='email'
                                         className="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                                 </div>
                             </div>
                             <div className="tc sf yo ap zf ep qb">
                                 <div className="vd to/2">
                                     <label className="rc ac" htmlFor="phone">Phone number</label>
-                                    <input type="text" name="phone" id="phone" placeholder="+009 3342 3432"
+                                    <input type="text" name="phone" id="phone" placeholder="+009 3342 3432" autoComplete='tel'
                                         className="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi" />
                                 </div>
                                 <div className="vd to/2">

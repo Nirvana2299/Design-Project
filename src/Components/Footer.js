@@ -124,7 +124,7 @@ return (
                             <p className="ac qe">Subscribe to receive future updates</p>
                             <form action="https://formbold.com/s/unique_form_id" method="POST">
                                 <div className="i">
-                                    <input type="text" placeholder="Email address"
+                                    <input type="text" placeholder="Email address" id='email-address'
                                         className="vd sm _g ch pm vk xm rg gm dm dn gi mi" />
                                     <button className="h q fi">
                                         <svg className="th vm ul" width="20" height="20" viewBox="0 0 20 20" fill="none"
