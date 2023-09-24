@@ -100,7 +100,7 @@ function TestimonialSection() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M3.52366 7.83336L7.99366 12.3034L6.81533 13.4817L0.333663 7.00002L6.81533 0.518357L7.99366 1.69669L3.52366 6.16669L13.667 6.16669L13.667 7.83336L3.52366 7.83336Z"
-                                    fill />
+                                    fill='true' />
                             </svg>
                         </div>
                         <div onClick={handleNext} className="swiper-button-next c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym">
@@ -108,7 +108,7 @@ function TestimonialSection() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                                    fill />
+                                    fill='true' />
                             </svg>
                         </div>
                     </div>
