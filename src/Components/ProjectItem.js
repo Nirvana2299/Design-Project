@@ -3,7 +3,6 @@ import './../App.css'
 
 const ProjectItem = ({ imageSrc, title, description }) => {
     return (
-        <div className="project-item wi fb vd jn/2 to/3">
             <div className="c i pg sg z-1">
                 <img src={imageSrc} alt="Project" />
                 <div className="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10">
@@ -16,7 +15,6 @@ const ProjectItem = ({ imageSrc, title, description }) => {
                     </a>
                 </div>
             </div>
-        </div>
     );
 };
 
