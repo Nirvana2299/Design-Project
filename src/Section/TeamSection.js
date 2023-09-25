@@ -11,19 +11,28 @@ function TeamSection() {
     return (
 
         <section className="i pg ji gp uq">
-
             <span className="rc h s r vd fd/5 fh rm"></span>
             <img src={shape08} alt="Shape Bg" className="h q r" />
             <img src={shape09} alt="Shape" className="of h y z/2" />
             <img src={shape10} alt="Shape" className="h _ aa" />
             <img src={shape11} alt="Shape" className="of h m ba" />
 
-            <div>
+                <div class="animate_top bb ze rj ki xn vq">
+                    <h2 class="fk vj pr kk wm on/5 gq/2 bb _b z-10">
+                        Meet With Our Creative Dedicated Team
+                    </h2>
+                    <p class="bb on/5 wo/5 hq z-10">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+                    </p>
+                </div>
+
                 <div className="animate_top bb ze rj ki xn vq">
-                    <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">Meet With Our Creative Dedicated Team</h2>
+                    <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">We Offer The Best Quality Service for You</h2>
                     <p className="bb on/5 wo/5 hq">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
                 </div>
-            </div>
+           
+
+
 
             <div className="bb ze i va ki xn xq jb jo">
                 <div className="wc qf pn xo gg cp">

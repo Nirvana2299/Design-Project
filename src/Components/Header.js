@@ -1,5 +1,5 @@
 import './../App.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import logoLight from '../images/logo-light.svg'
 import logoDark from '../images/logo-dark.svg'
 
@@ -20,11 +20,30 @@ function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+    }, [])
+    const sideNavRef = useRef(null);
+
+    useEffect(() => {
+        // Add event listener to the document object
+        document.addEventListener('mousedown', handleClickOutside);
+
+        // Remove event listener when the component unmounts
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
     }, []);
+
+    function handleClickOutside(event) {
+        if (sideNavRef.current && !sideNavRef.current.contains(event.target)) {
+            setNavigationOpen(navigationOpen ? !navigationOpen : '')
+            // Clicked outside the side navigation bar, close it
+            // Implement your close side navigation bar logic here
+        }
+    }
 
 
     return (
-        <header
+        <header ref={sideNavRef}
             className={`g s r vd ya cj ${stickyMenu ? 'hh sm _k dj bl ll' : ''}`}
         >
             {/* ${darkMode ? 'b eh' : ''} */}
@@ -53,12 +72,15 @@ function Header() {
                     <nav>
                         <ul className="tc _o sf yo cg ep">
                             <li><a href="#" className={`xl ${page === 'home' ? 'mk' : ''}`}>Home</a></li>
-                            <li><a href="#features" className="xl">Features</a></li>
+                            <li><a onClick={() => setNavigationOpen(navigationOpen ? !navigationOpen : '')} href="#features" className={`xl ${page === 'feature' ? 'mk' : ''}`}>Features</a></li>
                             <li className="c i">
                                 <a
                                     href="#"
                                     className={`xl tc wf yf bg ${page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' ? 'mk' : ''}`}
-                                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setDropdownOpen(!dropdownOpen);
+                                    }}
                                 >
                                     Pages
                                     <svg className={`th mm we fd pf ${dropdownOpen ? 'wh' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -73,7 +95,7 @@ function Header() {
                                     <li><a href="404.html" className={`xl ${page === '404' ? 'mk' : ''}`}>404</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#support" className="xl">Support</a></li>
+                            <li><a onClick={() => setNavigationOpen(navigationOpen ? !navigationOpen : '')} href="#support" className={`xl ${page === 'support' ? 'mk' : ''}`}>Support</a></li>
                         </ul>
                     </nav>
                     <div className="tc wf ig pb no">

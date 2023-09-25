@@ -7,14 +7,16 @@ import shape05 from './../images/shape-05.svg'
 import shape06 from './../images/shape-06.svg'
 import shape07 from './../images/shape-07.svg'
 
-import hero from './../images/hero.png'
+import hero from './../images/hero.png';
 import iconPlay from './../images/icon-play.svg'
 
 import about01 from './../images/about-01.png'
 import about02 from './../images/about-02.png'
+import about03 from './../images/about-03.png'
 import icon01 from './../images/icon-01.svg'
 import icon02 from './../images/icon-02.svg'
 import icon03 from './../images/icon-03.svg'
+import newImage from './../images/newImage.jpg'
 
 function HeroSection() {
     return (
@@ -26,7 +28,7 @@ function HeroSection() {
                     <img src={shape02} alt="shape" className="xc 2xl:ud-block h u p va" />
                     <img src={shape03} alt="shape" className="xc 2xl:ud-block h v w va" />
                     <img src={shape04} alt="shape" className="h q r" />
-                    <img src={hero} alt="Woman" className="h q r ua" />
+                    <img src={hero} alt="Woman" className="h q r ua left-20" />
                 </div>
 
                 <div className="bb ze ki xn 2xl:ud-px-0">
@@ -99,12 +101,13 @@ function HeroSection() {
                             </div>
                             <div>
                                 <img src={shape06} alt="Shape" />
-                                <img src={shape03} alt="About" className="ob gb" />
+                                <img src={about03} alt="About" className="ob gb" />
                                 <img src={shape07} alt="Shape" className="bb" />
                             </div>
                         </div>
 
                         <div className="animate_right jn/2">
+                        <div className='pr-12'>
                             <h4 className="ek yj mk gb">Why Choose Us</h4>
                             <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
                             <p className="uo">It is a long established fact that a reader will be distracted by the readable
@@ -116,6 +119,7 @@ function HeroSection() {
                                 </span>
                                 <span className="kk">SEE HOW WE WORK</span>
                             </a>
+                        </div>
                         </div>
                     </div>
                 </div>
