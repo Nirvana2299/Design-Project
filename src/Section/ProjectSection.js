@@ -27,7 +27,8 @@ const ProjectSection = () => {
                         columnWidth: '.project-sizer'
                     },
                 })
-            )
+            );
+            return () => isotope.destroy()
         }, 1000)
     }, [])
 
