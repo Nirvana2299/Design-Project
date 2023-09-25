@@ -8,10 +8,10 @@ import shape16 from './../images/shape-16.svg'
 
 function SupportSection() {
     return (
-        <>
+        <div>
         <section id="support" className="i pg fh rm ji gp uq">
 
-            {/* <img src={shape06} alt="Shape" className="h aa y" /> */}
+            <img src={shape06} alt="Shape" className="h aa y -z-10" />
             <img src={shape03} alt="Shape" className="h ca u" />
             <img src={shape07} alt="Shape" className="h w da ee" />
             <img src={shape12} alt="Shape" className="h p s" />
@@ -159,7 +159,7 @@ function SupportSection() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 

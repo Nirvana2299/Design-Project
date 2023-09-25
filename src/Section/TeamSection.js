@@ -8,23 +8,27 @@ import team02 from './../images/team-02.png'
 import team03 from './../images/team-03.png'
 
 function TeamSection() {
+    const title = 'Meet With Our Creative Dedicated Team'
+    const detail = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.'
     return (
 
         <section className="i pg ji gp uq">
-            <span className="rc h s r vd fd/5 fh rm"></span>
+            <span className="rc h s r vd fd/5 fh rm -z-20"></span>
             <img src={shape08} alt="Shape Bg" className="h q r" />
             <img src={shape09} alt="Shape" className="of h y z/2" />
-            <img src={shape10} alt="Shape" className="h _ aa" />
+            <img src={shape10} alt="Shape" className="h _ aa -z-10" />
             <img src={shape11} alt="Shape" className="of h m ba" />
 
+            <div>
                 <div className="animate_top bb ze rj ki xn vq">
-                    <h2 className="fk vj pr kk wm on/5 gq/2 bb _b z-10">
-                        Meet With Our Creative Dedicated Team
+                    <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">
+                        {title}
                     </h2>
-                    <p className="bb on/5 wo/5 hq z-10">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+                    <p className="bb on/5 wo/5 hq">
+                        {detail}
                     </p>
                 </div>
+            </div>
             <div className="bb ze i va ki xn xq jb jo">
                 <div className="wc qf pn xo gg cp">
 

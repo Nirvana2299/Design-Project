@@ -71,7 +71,7 @@ function Header() {
                 <div className={`vd wo/4 sd qo f ho oo wf yf ${navigationOpen ? 'd hh rm sr td ud qg ug jc yh' : ''}`}>
                     <nav>
                         <ul className="tc _o sf yo cg ep">
-                            <li><a href="#" className={`xl ${page === 'home' ? 'mk' : ''}`}>Home</a></li>
+                            <li><a href="#" onClick={(() => setNavigationOpen(navigationOpen ? !navigationOpen : ''))} className={`xl ${page === 'home' ? 'mk' : ''}`}>Home</a></li>
                             <li><a onClick={() => setNavigationOpen(navigationOpen ? !navigationOpen : '')} href="#features" className={`xl ${page === 'feature' ? 'mk' : ''}`}>Features</a></li>
                             <li className="c i">
                                 <a
