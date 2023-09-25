@@ -5,6 +5,40 @@ import icon06 from './../images/icon-06.svg'
 import icon07 from './../images/icon-07.svg'
 
 function ServiceSection() {
+
+    const Services = [
+        {
+            icon: icon04,
+            title: 'Crafted for Startups',
+            discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
+        },
+        {
+            icon: icon05,
+            title: 'High-quality Design',
+            discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
+        },
+        {
+            icon: icon06,
+            title: 'All Essential Sections',
+            discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
+        },
+        {
+            icon: icon07,
+            title: 'Speed Optimized',
+            discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
+        },
+        {
+            icon: icon05,
+            title: 'Fully Customizable',
+            discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
+        },
+        {
+            icon: icon06,
+            title: 'Regular Updates',
+            discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
+        },
+    ]
+
     return (
         <section className="lj tp kr">
             <div className="animate_top bb ze rj ki xn vq">
@@ -14,41 +48,15 @@ function ServiceSection() {
             <div className="bb ze ki xn yq mb en">
                 <div className="wc qf pn xo ng">
 
-                    <div className="animate_top sg oi pi zq ml il am cn _m">
-                        <img src={icon04} alt="Icon" />
-                        <h4 className="ek zj kk wm nb _b">Crafted for Startups</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                    </div>
-
-                    <div className="animate_top sg oi pi zq ml il am cn _m">
-                        <img src={icon05} alt="Icon" />
-                        <h4 className="ek zj kk wm nb _b">High-quality Design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                    </div>
-
-                    <div className="animate_top sg oi pi zq ml il am cn _m">
-                        <img src={icon06} alt="Icon" />
-                        <h4 className="ek zj kk wm nb _b">All Essential Sections</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                    </div>
-
-                    <div className="animate_top sg oi pi zq ml il am cn _m">
-                        <img src={icon07} alt="Icon" />
-                        <h4 className="ek zj kk wm nb _b">Speed Optimized</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                    </div>
-
-                    <div className="animate_top sg oi pi zq ml il am cn _m">
-                        <img src={icon05} alt="Icon" />
-                        <h4 className="ek zj kk wm nb _b">Fully Customizable</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                    </div>
-
-                    <div className="animate_top sg oi pi zq ml il am cn _m">
-                        <img src={icon06} alt="Icon" />
-                        <h4 className="ek zj kk wm nb _b">Regular Updates</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-                    </div>
+                    {Services.map((service) => {
+                        return (
+                            <div className="animate_top sg oi pi zq ml il am cn _m">
+                                <img src={service.icon} alt="Icon" />
+                                <h4 className="ek zj kk wm nb _b">{service.title}</h4>
+                                <p>{service.discription}</p>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </section>
