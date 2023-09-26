@@ -20,7 +20,7 @@ function SupportSection() {
             <div>
                 <div className="animate_top bb ze rj ki xn vq">
                     <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">Let’s Stay Connected</h2>
-                    <p className="bb on/5 wo/5 hq">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+                    {/* <p className="bb on/5 wo/5 hq">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p> */}
                 </div>
             </div>
 
