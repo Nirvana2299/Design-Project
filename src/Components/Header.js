@@ -56,8 +56,8 @@ function Header() {
                     </a>
 
                     <button className="po rc" onClick={() => {
-                        setDropdownOpen(dropdownOpen ? !dropdownOpen : '')
-                        setNavigationOpen(!navigationOpen)
+                        setDropdownOpen(navigationOpen ? !dropdownOpen : '')
+                        setNavigationOpen(navigationOpen ? !navigationOpen : '')
                     }}>
                         <span className="rc i pf re pd">
                             <span className="du-block h q vd yc">

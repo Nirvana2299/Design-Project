@@ -203,7 +203,6 @@ const ProjectSection = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
