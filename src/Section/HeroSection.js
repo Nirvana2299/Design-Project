@@ -1,5 +1,5 @@
 import './../App.css';
-import { motion } from 'framer-motion'
+import {motion } from 'framer-motion'
 import shape01 from './../images/shape-01.svg'
 import shape02 from './../images/shape-02.svg'
 import shape03 from './../images/shape-03.svg'
@@ -32,7 +32,12 @@ function HeroSection() {
                     <img src={hero} alt="Woman" className="h q r ua left-20" />
                 </div>
 
-                <div className="bb ze ki xn 2xl:ud-px-0">
+                <motion.div className="bb ze ki xn 2xl:ud-px-0"
+                // transition={{delay: 0.2}}
+                animate={{x: 0}}
+                initial={{x: 100}}
+                
+                >
                     <div className="tc _o">
                         <div className="animate_left jn/2">
                             <h1 className="fk vj zp or kk wm wb">We specialize in UI/UX, Web Development, Digital Marketing.
@@ -42,7 +47,7 @@ function HeroSection() {
                                 Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
                             </p>
                             <div className="tc tf yo zf mb">
-                                <a href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</a>
+                                <motion.a animate={{scale: 1}} initial={{scale: 0}} href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</motion.a>
                                 <span className="tc sf">
                                     <a href="#" className="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
                                     <span className="inline-block">For any question or concern</span>
@@ -50,7 +55,8 @@ function HeroSection() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
+
             </section>
 
             <section id="features">
@@ -108,19 +114,19 @@ function HeroSection() {
                         </div>
 
                         <div className="animate_right jn/2">
-                            <div className='pr-12'>
-                                <h4 className="ek yj mk gb">Why Choose Us</h4>
-                                <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
-                                <p className="uo">It is a long established fact that a reader will be distracted by the readable
-                                    content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
-                                <a href="#" data-fslightbox className="vc wf hg mb">
-                                    <span className="tc wf xf be dd rg i gh ua">
-                                        <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                                        <img src={iconPlay} alt="Play" />
-                                    </span>
-                                    <span className="kk">SEE HOW WE WORK</span>
-                                </a>
-                            </div>
+                        <div className='pr-12'>
+                            <h4 className="ek yj mk gb">Why Choose Us</h4>
+                            <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
+                            <p className="uo">It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                            <a href="#" data-fslightbox className="vc wf hg mb">
+                                <span className="tc wf xf be dd rg i gh ua">
+                                    <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
+                                    <img src={iconPlay} alt="Play" />
+                                </span>
+                                <span className="kk">SEE HOW WE WORK</span>
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>

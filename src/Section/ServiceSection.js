@@ -3,6 +3,7 @@ import icon04 from './../images/icon-04.svg'
 import icon05 from './../images/icon-05.svg'
 import icon06 from './../images/icon-06.svg'
 import icon07 from './../images/icon-07.svg'
+import healthSaftey from './../images/health-and-safety.svg'
 
 function ServiceSection() {
 
