@@ -1,6 +1,4 @@
 import './../App.css'
-
-import PricingSection from '../Section/PricinngSection'
 import ProjectSection from '../Section/ProjectSection'
 import TestimonialSection from '../Section/TestimonialSection'
 import Brand from '../Section/BrandSection'
@@ -16,7 +14,6 @@ function MainContent() {
             <HeroSection />
             <TeamSection />
             <ServiceSection />
-            <PricingSection />
             <ProjectSection />
             <TestimonialSection />
             <Brand />

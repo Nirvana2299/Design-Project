@@ -51,9 +51,9 @@ function ServiceSection() {
                     {Services.map((service) => {
                         return (
                             <div className="animate_top sg oi pi zq ml il am cn _m">
-                                <img src={service.icon} alt="Icon" />
-                                <h4 className="ek zj kk wm nb _b">{service.title}</h4>
-                                <p>{service.discription}</p>
+                                <img className='2xl:inline-block' src={service.icon} alt="Icon" />
+                                <h4 className="ek zj kk wm nb _b lg:inline-block 2xl:ml-4">{service.title}</h4>
+                                <p className='2xl:ml-20 2xl:inline-block'>{service.discription}</p>
                             </div>
                         )
                     })}
