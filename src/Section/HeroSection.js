@@ -1,5 +1,5 @@
 import './../App.css';
-import {motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import shape01 from './../images/shape-01.svg'
 import shape02 from './../images/shape-02.svg'
 import shape03 from './../images/shape-03.svg'
@@ -33,9 +33,9 @@ function HeroSection() {
                 </div>
 
                 <motion.div className="bb ze ki xn 2xl:ud-px-0"
-                transition={{type: 'inertia', velocity: -120, duration: 0.4, delay: 0.2}}
-                animate={{x: 0}}
-                initial={{x: 100}}
+                    transition={{ type: 'inertia', velocity: 120, duration: 0.4, delay: 0.2 }}
+                    animate={{ x: 0 }}
+                    initial={{ x: -100 }}
                 >
                     <div className="tc _o">
                         <div className="animate_left jn/2">
@@ -46,7 +46,7 @@ function HeroSection() {
                                 Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
                             </p>
                             <div className="tc tf yo zf mb">
-                                <motion.a animate={{scale: 1}} initial={{scale: 0}} transition={{duration: 0.2}} href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</motion.a>
+                                <motion.a animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.3 }} href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</motion.a>
                                 <span className="tc sf">
                                     <a href="#" className="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
                                     <span className="inline-block">For any question or concern</span>
@@ -60,7 +60,7 @@ function HeroSection() {
 
             <section id="features">
                 <div className="bb ze ki yn 2xl:ud-px-12.5">
-                    <div className="tc uf zo xf ap zf bp mq">
+                    <motion.div animate={{y: 0}} initial={{y: 90}} transition={{ duration: 0.8}} className="tc uf zo xf ap zf bp mq">
 
                         <div className="animate_top kn to/3 tc cg oq">
                             <div className="tc wf xf cf ae cd rg mh">
@@ -91,7 +91,7 @@ function HeroSection() {
                                 <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -113,19 +113,19 @@ function HeroSection() {
                         </div>
 
                         <div className="animate_right jn/2">
-                        <div className='pr-12'>
-                            <h4 className="ek yj mk gb">Why Choose Us</h4>
-                            <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
-                            <p className="uo">It is a long established fact that a reader will be distracted by the readable
-                                content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
-                            <a href="#" data-fslightbox className="vc wf hg mb">
-                                <span className="tc wf xf be dd rg i gh ua">
-                                    <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                                    <img src={iconPlay} alt="Play" />
-                                </span>
-                                <span className="kk">SEE HOW WE WORK</span>
-                            </a>
-                        </div>
+                            <div className='pr-12'>
+                                <h4 className="ek yj mk gb">Why Choose Us</h4>
+                                <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
+                                <p className="uo">It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                                <a href="#" data-fslightbox className="vc wf hg mb">
+                                    <span className="tc wf xf be dd rg i gh ua">
+                                        <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
+                                        <img src={iconPlay} alt="Play" />
+                                    </span>
+                                    <span className="kk">SEE HOW WE WORK</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
