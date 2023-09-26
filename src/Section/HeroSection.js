@@ -33,7 +33,7 @@ function HeroSection() {
                 </div>
 
                 <motion.div className="bb ze ki xn 2xl:ud-px-0"
-                transition={{type: 'inertia', velocity: -100, duration: 0.4, delay: 0.2}}
+                transition={{type: 'inertia', velocity: -120, duration: 0.4, delay: 0.2}}
                 animate={{x: 0}}
                 initial={{x: 100}}
                 >
