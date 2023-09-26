@@ -1,4 +1,5 @@
 import './../App.css';
+import { motion } from 'framer-motion'
 import shape01 from './../images/shape-01.svg'
 import shape02 from './../images/shape-02.svg'
 import shape03 from './../images/shape-03.svg'
@@ -107,19 +108,19 @@ function HeroSection() {
                         </div>
 
                         <div className="animate_right jn/2">
-                        <div className='pr-12'>
-                            <h4 className="ek yj mk gb">Why Choose Us</h4>
-                            <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
-                            <p className="uo">It is a long established fact that a reader will be distracted by the readable
-                                content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
-                            <a href="#" data-fslightbox className="vc wf hg mb">
-                                <span className="tc wf xf be dd rg i gh ua">
-                                    <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                                    <img src={iconPlay} alt="Play" />
-                                </span>
-                                <span className="kk">SEE HOW WE WORK</span>
-                            </a>
-                        </div>
+                            <div className='pr-12'>
+                                <h4 className="ek yj mk gb">Why Choose Us</h4>
+                                <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
+                                <p className="uo">It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                                <a href="#" data-fslightbox className="vc wf hg mb">
+                                    <span className="tc wf xf be dd rg i gh ua">
+                                        <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
+                                        <img src={iconPlay} alt="Play" />
+                                    </span>
+                                    <span className="kk">SEE HOW WE WORK</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

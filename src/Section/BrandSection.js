@@ -21,21 +21,26 @@ function Brand() {
         },
         {
             id: 2,
-            brand: brandLight03,
+            brand: brandLight02,
             link: '#'
         },
         {
             id: 3,
-            brand: brandLight04,
+            brand: brandLight03,
             link: '#'
         },
         {
             id: 4,
-            brand: brandLight05,
+            brand: brandLight04,
             link: '#'
         },
         {
             id: 5,
+            brand: brandLight05,
+            link: '#'
+        },
+        {
+            id: 6,
             brand: brandLight06,
             link: '#'
         },
@@ -84,7 +89,7 @@ function Brand() {
                         {icons.map((icon) => {
                             return (
                                 <a key={icon.id} href={icon.link} className="rc animate_top">
-                                    <img className="th wl ml il zl om" src={icon.brand} alt="Clients" />
+                                    <img className="th wl ml il zl om text-center" src={icon.brand} alt="Clients" />
                                     {/* <img className="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" /> */}
                                 </a>
                             )
