@@ -8,31 +8,37 @@ function ServiceSection() {
 
     const Services = [
         {
+            id: 1,
             icon: icon04,
             title: 'Crafted for Startups',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
         {
+            id: 2,
             icon: icon05,
             title: 'High-quality Design',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
         {
+            id: 3,
             icon: icon06,
             title: 'All Essential Sections',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
         {
+            id: 4,
             icon: icon07,
             title: 'Speed Optimized',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
         {
+            id: 5,
             icon: icon05,
             title: 'Fully Customizable',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
         {
+            id: 6,
             icon: icon06,
             title: 'Regular Updates',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
@@ -50,7 +56,7 @@ function ServiceSection() {
 
                     {Services.map((service) => {
                         return (
-                            <div className="animate_top sg oi pi zq ml il am cn _m">
+                            <div key={service.id} className="animate_top sg oi pi zq ml il am cn _m">
                                 <img className='2xl:inline-block' src={service.icon} alt="Icon" />
                                 <h4 className="ek zj kk wm nb _b lg:inline-block 2xl:ml-4">{service.title}</h4>
                                 <p className='2xl:ml-20 2xl:inline-block'>{service.discription}</p>

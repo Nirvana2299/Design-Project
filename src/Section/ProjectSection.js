@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import project01 from './../images/project-01.png'
 import project02 from './../images/project-02.png'
 import project03 from './../images/project-03.png'

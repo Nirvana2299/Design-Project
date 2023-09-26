@@ -8,8 +8,9 @@ import iconCalender from './../images/icon-calender.svg'
 
 function BlogNewsSection() {
 
-   const blogs = [
+    const blogs = [
         {
+            id: 1,
             image: blog01,
             link: '#',
             author: 'Musharof Chy',
@@ -17,6 +18,7 @@ function BlogNewsSection() {
             title: 'Free advertising for your online business'
         },
         {
+            id: 2,
             image: blog02,
             link: '#',
             author: 'Musharof Chy',
@@ -24,6 +26,7 @@ function BlogNewsSection() {
             title: '9 simple ways to improve your design skills'
         },
         {
+            id: 3,
             image: blog03,
             link: '#',
             author: 'Musharof Chy',
@@ -45,7 +48,7 @@ function BlogNewsSection() {
                 <div className="wc qf pn xo zf iq">
                     {blogs.map((blog) => {
                         return (
-                            <div className="animate_top sg vk rm xm">
+                            <div key={blog.id} className="animate_top sg vk rm xm">
                                 <div className="c rc i z-1 pg">
                                     <img className="w-full" src={blog.image} alt="Blog" />
                                     <div className="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">

@@ -15,26 +15,27 @@ import brandLight06 from './../images/brand-light-06.svg'
 function Brand() {
     const icons = [
         {
+            id: 1,
             brand: brandLight01,
             link: '#'
         },
         {
-            brand: brandLight02,
-            link: '#'
-        },
-        {
+            id: 2,
             brand: brandLight03,
             link: '#'
         },
         {
+            id: 3,
             brand: brandLight04,
             link: '#'
         },
         {
+            id: 4,
             brand: brandLight05,
             link: '#'
         },
         {
+            id: 5,
             brand: brandLight06,
             link: '#'
         },
@@ -82,7 +83,7 @@ function Brand() {
                     <div className="wc rf qn zf cp kq xf wf">
                         {icons.map((icon) => {
                             return (
-                                <a href={icon.link} className="rc animate_top">
+                                <a key={icon.id} href={icon.link} className="rc animate_top">
                                     <img className="th wl ml il zl om" src={icon.brand} alt="Clients" />
                                     {/* <img className="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" /> */}
                                 </a>
