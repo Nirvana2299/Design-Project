@@ -29,7 +29,7 @@ const ProjectSection = () => {
                 })
             );
             return () => isotope.destroy()
-        }, 1000)
+        }, 1500)
     }, [])
 
     useEffect(() => {

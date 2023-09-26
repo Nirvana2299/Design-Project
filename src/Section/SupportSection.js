@@ -11,7 +11,7 @@ function SupportSection() {
         <div>
         <section id="support" className="i pg fh rm ji gp uq">
 
-            <img src={shape06} alt="Shape" className="h aa y -z-10" />
+            <img src={shape06} alt="Shape" className="h aa y hidden lg:block" />
             <img src={shape03} alt="Shape" className="h ca u" />
             <img src={shape07} alt="Shape" className="h w da ee" />
             <img src={shape12} alt="Shape" className="h p s" />

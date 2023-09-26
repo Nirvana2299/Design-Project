@@ -16,7 +16,7 @@ function TeamSection() {
             <span className="rc h s r vd fd/5 fh rm -z-20"></span>
             <img src={shape08} alt="Shape Bg" className="h q r" />
             <img src={shape09} alt="Shape" className="of h y z/2" />
-            <img src={shape10} alt="Shape" className="h _ aa -z-10" />
+            <img src={shape10} alt="Shape" className="h _ aa -z-10 hidden lg:block" />
             <img src={shape11} alt="Shape" className="of h m ba" />
 
             <div>
