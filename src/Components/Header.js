@@ -36,6 +36,7 @@ function Header() {
     function handleClickOutside(event) {
         if (sideNavRef.current && !sideNavRef.current.contains(event.target)) {
             setNavigationOpen(navigationOpen ? !navigationOpen : '')
+            setDropdownOpen(dropdownOpen ? !dropdownOpen : '')
             // Clicked outside the side navigation bar, close it
             // Implement your close side navigation bar logic here
         }
@@ -54,7 +55,10 @@ function Header() {
                         <img className="xc nm" src={logoDark} alt="Logo Dark" />
                     </a>
 
-                    <button className="po rc" onClick={() => setNavigationOpen(!navigationOpen)}>
+                    <button className="po rc" onClick={() => {
+                        setDropdownOpen(dropdownOpen ? !dropdownOpen : '')
+                        setNavigationOpen(!navigationOpen)
+                    }}>
                         <span className="rc i pf re pd">
                             <span className="du-block h q vd yc">
                                 <span className={`rc i r s eh um tg te rd eb ml jl dl ${!navigationOpen ? 'ue el' : ''}`}></span>
