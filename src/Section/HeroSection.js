@@ -29,14 +29,13 @@ function HeroSection() {
                     <img src={shape02} alt="shape" className="xc 2xl:ud-block h u p va" />
                     <img src={shape03} alt="shape" className="xc 2xl:ud-block h v w va" />
                     <img src={shape04} alt="shape" className="h q r" />
-                    <img src={hero} alt="Woman" className="h q r ua left-20" />
+                    <motion.img animate={{ y: 0 }} initial={{ y: -200 }} transition={{ type: 'inertia', velocity: 200, duration: 0.4, delay: 0.2 }} src={hero} alt="Woman" className="h q r ua left-20" />
                 </div>
 
                 <motion.div className="bb ze ki xn 2xl:ud-px-0"
-                transition={{duration: 0.2, delay: 0.2}}
+                transition={{type: 'inertia', velocity: -100, duration: 0.4, delay: 0.2}}
                 animate={{x: 0}}
                 initial={{x: 100}}
-                
                 >
                     <div className="tc _o">
                         <div className="animate_left jn/2">
