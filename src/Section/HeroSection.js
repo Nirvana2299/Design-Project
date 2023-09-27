@@ -1,5 +1,5 @@
 import './../App.css';
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import shape01 from './../images/shape-01.svg'
 import shape02 from './../images/shape-02.svg'
 import shape03 from './../images/shape-03.svg'
@@ -18,8 +18,16 @@ import icon01 from './../images/icon-01.svg'
 import icon02 from './../images/icon-02.svg'
 import icon03 from './../images/icon-03.svg'
 import newImage from './../images/newImage.jpg'
+import { useEffect, useRef } from 'react';
 
 function HeroSection() {
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    useEffect(() => {
+        console.log(isInView);
+    }, [isInView])
+
     return (
         <>
             <section className="gj do ir hj sp jr i pg">
@@ -29,13 +37,13 @@ function HeroSection() {
                     <img src={shape02} alt="shape" className="xc 2xl:ud-block h u p va" />
                     <img src={shape03} alt="shape" className="xc 2xl:ud-block h v w va" />
                     <img src={shape04} alt="shape" className="h q r" />
-                    <motion.img animate={{ y: 0 }} initial={{ y: -200 }} transition={{ type: 'inertia', velocity: 200, duration: 0.4, delay: 0.2 }} src={hero} alt="Woman" className="h q r ua left-20" />
+                    <motion.img animate={{ y: 0, opacity: 1 }} initial={{ y: -200, opacity: 0 }} transition={{ type: 'inertia', velocity: 200, duration: 0.4, delay: 0.2 }} src={hero} alt="Woman" className="h q r ua left-20" />
                 </div>
 
-                <motion.div className="bb ze ki xn 2xl:ud-px-0"
+                <motion.div ref={ref} className="bb ze ki xn 2xl:ud-px-0"
                     transition={{ type: 'inertia', velocity: 120, duration: 0.4, delay: 0.2 }}
-                    animate={{ x: 0 }}
-                    initial={{ x: -100 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    initial={{ x: -100, opacity: 0 }}
                 >
                     <div className="tc _o">
                         <div className="animate_left jn/2">
@@ -60,7 +68,7 @@ function HeroSection() {
 
             <section id="features">
                 <div className="bb ze ki yn 2xl:ud-px-12.5">
-                    <motion.div animate={{y: 0}} initial={{y: 90}} transition={{ duration: 0.8}} className="tc uf zo xf ap zf bp mq">
+                    <motion.div ref={ref} animate={{ y: 0, opacity: 1 }} initial={{ y: 90, opacity: 0 }} transition={{ duration: 0.8, delay: 0.25 }} className="tc uf zo xf ap zf bp mq">
 
                         <div className="animate_top kn to/3 tc cg oq">
                             <div className="tc wf xf cf ae cd rg mh">
@@ -96,7 +104,7 @@ function HeroSection() {
             </section>
 
             <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
-                <div className="bb ze ki xn wq">
+                <div ref={ref} className="bb ze ki xn wq">
                     <div className="tc wf gg qq">
 
                         <div className="animate_left xc gn gg jn/2 i">
