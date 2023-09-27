@@ -1,5 +1,6 @@
 import './../App.css'
 import { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion'
 import logoLight from '../images/logo-light.svg'
 import logoDark from '../images/logo-dark.svg'
 
@@ -49,7 +50,11 @@ function Header() {
         >
             {/* ${darkMode ? 'b eh' : ''} */}
             <div className="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
-                <div className="vd to/4 tc wf yf">
+                <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.35 }}
+                    className="vd to/4 tc wf yf">
                     <a href="index.html">
                         <img className="om" src={logoLight} alt="Logo Light" />
                         <img className="xc nm" src={logoDark} alt="Logo Dark" />
@@ -71,9 +76,9 @@ function Header() {
                             </span>
                         </span>
                     </button>
-                </div>
+                </motion.div>
                 <div className={`vd wo/4 sd qo f ho oo wf yf ${navigationOpen ? 'd hh rm sr td ud qg ug jc yh' : ''}`}>
-                    <nav>
+                    <motion.nav initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.25 }}>
                         <ul className="tc _o sf yo cg ep">
                             <li><a href="#" onClick={(() => setNavigationOpen(navigationOpen ? !navigationOpen : ''))} className={`xl ${page === 'home' ? 'mk' : ''}`}>Home</a></li>
                             <li><a onClick={() => setNavigationOpen(navigationOpen ? !navigationOpen : '')} href="#features" className={`xl ${page === 'feature' ? 'mk' : ''}`}>Features</a></li>
@@ -101,7 +106,7 @@ function Header() {
                             </li>
                             <li><a onClick={() => setNavigationOpen(navigationOpen ? !navigationOpen : '')} href="#support" className={`xl ${page === 'support' ? 'mk' : ''}`}>Support</a></li>
                         </ul>
-                    </nav>
+                    </motion.nav>
                     <div className="tc wf ig pb no">
                         {/* <div className={`pc h io pa ra ${navigationOpen ? '!-ud-visible' : 'd'}`}>
                             <label className="rc ab i">
