@@ -108,9 +108,9 @@ function HeroSection() {
 
 
 
-            <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
-                <div className="bb ze ki xn wq">
-                    <Reveal>
+            <Reveal>
+                <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
+                    <div className="bb ze ki xn wq">
                         <div className="tc wf gg qq">
 
                             <div className="animate_left xc gn gg jn/2 i">
@@ -142,9 +142,9 @@ function HeroSection() {
                                 </div>
                             </div>
                         </div>
-                    </Reveal>
-                </div>
-            </section>
+                    </div>
+                </section>
+            </Reveal>
         </>
     )
 }
