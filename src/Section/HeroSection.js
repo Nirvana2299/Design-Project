@@ -18,18 +18,20 @@ import icon01 from './../images/icon-01.svg'
 import icon02 from './../images/icon-02.svg'
 import icon03 from './../images/icon-03.svg'
 import newImage from './../images/newImage.jpg'
+import Reveal from '../Components/Reveal';
 import { useEffect, useRef } from 'react';
 
 function HeroSection() {
-    const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    // const ref = useRef(null)
+    // const isInView = useInView(ref, { once: true })
 
-    useEffect(() => {
-        console.log(isInView);
-    }, [isInView])
+    // useEffect(() => {
+    //     console.log(isInView);
+    // }, [isInView])
 
     return (
         <>
+        <Reveal>
             <section className="gj do ir hj sp jr i pg">
 
                 <div className="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
@@ -40,10 +42,10 @@ function HeroSection() {
                     <motion.img animate={{ y: 0, opacity: 1 }} initial={{ y: -200, opacity: 0 }} transition={{ type: 'inertia', velocity: 200, duration: 0.4, delay: 0.2 }} src={hero} alt="Woman" className="h q r ua left-20" />
                 </div>
 
-                <motion.div ref={ref} className="bb ze ki xn 2xl:ud-px-0"
-                    transition={{ type: 'inertia', velocity: 120, duration: 0.4, delay: 0.2 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    initial={{ x: -100, opacity: 0 }}
+                <motion.div className="bb ze ki xn 2xl:ud-px-0"
+                    // transition={{ type: 'inertia', velocity: 120, duration: 0.4, delay: 0.2 }}
+                    // animate={{ x: 0, opacity: 1 }}
+                    // initial={{ x: -100, opacity: 0 }}
                 >
                     <div className="tc _o">
                         <div className="animate_left jn/2">
@@ -65,10 +67,11 @@ function HeroSection() {
                 </motion.div>
 
             </section>
+            </Reveal>
 
             <section id="features">
                 <div className="bb ze ki yn 2xl:ud-px-12.5">
-                    <motion.div ref={ref} animate={{ y: 0, opacity: 1 }} initial={{ y: 90, opacity: 0 }} transition={{ duration: 0.8, delay: 0.25 }} className="tc uf zo xf ap zf bp mq">
+                    <motion.div animate={{ y: 0, opacity: 1 }} initial={{ y: 90, opacity: 0 }} transition={{ duration: 0.8, delay: 0.25 }} className="tc uf zo xf ap zf bp mq">
 
                         <div className="animate_top kn to/3 tc cg oq">
                             <div className="tc wf xf cf ae cd rg mh">
@@ -102,42 +105,43 @@ function HeroSection() {
                     </motion.div>
                 </div>
             </section>
+            <Reveal>
+                <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
+                    <div  className="bb ze ki xn wq">
+                        <div className="tc wf gg qq">
 
-            <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
-                <div ref={ref} className="bb ze ki xn wq">
-                    <div className="tc wf gg qq">
-
-                        <div className="animate_left xc gn gg jn/2 i">
-                            <div>
-                                <img src={shape05} alt="Shape" className="h -ud-left-5 x" />
-                                <img src={about01} alt="About" className="ib" />
-                                <img src={about02} alt="About" />
+                            <div className="animate_left xc gn gg jn/2 i">
+                                <div>
+                                    <img src={shape05} alt="Shape" className="h -ud-left-5 x" />
+                                    <img src={about01} alt="About" className="ib" />
+                                    <img src={about02} alt="About" />
+                                </div>
+                                <div>
+                                    <img src={shape06} alt="Shape" />
+                                    <img src={about03} alt="About" className="ob gb" />
+                                    <img src={shape07} alt="Shape" className="bb" />
+                                </div>
                             </div>
-                            <div>
-                                <img src={shape06} alt="Shape" />
-                                <img src={about03} alt="About" className="ob gb" />
-                                <img src={shape07} alt="Shape" className="bb" />
-                            </div>
-                        </div>
 
-                        <div className="animate_right jn/2">
-                            <div className='pr-12'>
-                                <h4 className="ek yj mk gb">Why Choose Us</h4>
-                                <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
-                                <p className="uo">It is a long established fact that a reader will be distracted by the readable
-                                    content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
-                                <a href="#" data-fslightbox className="vc wf hg mb">
-                                    <span className="tc wf xf be dd rg i gh ua">
-                                        <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                                        <img src={iconPlay} alt="Play" />
-                                    </span>
-                                    <span className="kk">SEE HOW WE WORK</span>
-                                </a>
+                            <div className="animate_right jn/2">
+                                <div className='pr-12'>
+                                    <h4 className="ek yj mk gb">Why Choose Us</h4>
+                                    <h2 className="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
+                                    <p className="uo">It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                                    <a href="#" data-fslightbox className="vc wf hg mb">
+                                        <span className="tc wf xf be dd rg i gh ua">
+                                            <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
+                                            <img src={iconPlay} alt="Play" />
+                                        </span>
+                                        <span className="kk">SEE HOW WE WORK</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </Reveal>
         </>
     )
 }
