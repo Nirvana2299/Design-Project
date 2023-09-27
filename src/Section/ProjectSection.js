@@ -4,6 +4,7 @@ import project02 from './../images/project-02.png'
 import project03 from './../images/project-03.png'
 import project04 from './../images/project-04.png'
 import Isotope from 'isotope-layout';
+import Reveal from '../Components/Reveal';
 
 const ProjectSection = () => {
     const [sectionTitle] = useState('We Offer Great Affordable Premium Prices.');
@@ -77,14 +78,16 @@ const ProjectSection = () => {
 
     return (
         <section className="pg pj vp mr oj wp nr">
+        <Reveal>
             <div>
                 <div className="animate_top bb ze rj ki xn vq">
                     <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">{sectionTitle}</h2>
                     <p className="bb on/5 wo/5 hq">{sectionTitleText}</p>
                 </div>
             </div>
-
+            </Reveal>
             <div className="bb ze ki xn 2xl:ud-px-0 jb">
+            <Reveal>
                 <div className="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc">
                     <button
                         onClick={() => setFilterTab('*')}
@@ -111,7 +114,7 @@ const ProjectSection = () => {
                         Ecommerce
                     </button>
                 </div>
-
+                </Reveal>
                 <div className="projects-wrapper tc -ud-mx-5">
                     <div className="project-sizer"></div>
 

@@ -1,4 +1,5 @@
 import './../App.css'
+import Reveal from '../Components/Reveal'
 
 import shape11 from './../images/shape-11.svg'
 import shape07 from './../images/shape-07.svg'
@@ -53,48 +54,59 @@ function Brand() {
                 <img src={shape14} alt="Shape" className="h ja ka" />
                 <img src={shape15} alt="Shape" className="h q p" />
                 <div className="bb ze i va ki xn br">
-                    <div className="tc uf sn tn xf un gg">
-                        <div className="animate_top me/5 ln rj">
-                            <h2 className="gk vj zp or kk wm hc">785</h2>
-                            <p className="ek bk aq">Global Brands</p>
+                    <Reveal>
+                        <div className="tc uf sn tn xf un gg">
+                            <div className="animate_top me/5 ln rj">
+                                <h2 className="gk vj zp or kk wm hc">785</h2>
+                                <p className="ek bk aq">Global Brands</p>
+                            </div>
+
+                            <div className="animate_top me/5 ln rj">
+                                <h2 className="gk vj zp or kk wm hc">533</h2>
+                                <p className="ek bk aq">Happy Clients</p>
+                            </div>
+
+
+                            <div className="animate_top me/5 ln rj">
+                                <h2 className="gk vj zp or kk wm hc">865</h2>
+                                <p className="ek bk aq">Winning Award</p>
+                            </div>
+
+                            <div className="animate_top me/5 ln rj">
+                                <h2 className="gk vj zp or kk wm hc">346</h2>
+                                <p className="ek bk aq">Happy Clients</p>
+                            </div>
                         </div>
-                        <div className="animate_top me/5 ln rj">
-                            <h2 className="gk vj zp or kk wm hc">533</h2>
-                            <p className="ek bk aq">Happy Clients</p>
-                        </div>
-                        <div className="animate_top me/5 ln rj">
-                            <h2 className="gk vj zp or kk wm hc">865</h2>
-                            <p className="ek bk aq">Winning Award</p>
-                        </div>
-                        <div className="animate_top me/5 ln rj">
-                            <h2 className="gk vj zp or kk wm hc">346</h2>
-                            <p className="ek bk aq">Happy Clients</p>
-                        </div>
-                    </div>
+                    </Reveal>
                 </div>
             </section>
 
 
             <section className="pj vp mr">
-
                 <div>
                     <div className="animate_top bb ze rj ki xn vq">
-                        <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">Trusted by Global Brands</h2>
-                        <p className="bb on/5 wo/5 hq" x-text="sectionTitleText">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+                        <Reveal>
+                            <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">Trusted by Global Brands</h2>
+                        </Reveal>
+                        <Reveal>
+                            <p className="bb on/5 wo/5 hq" x-text="sectionTitleText">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+                        </Reveal>
                     </div>
                 </div>
 
                 <div className="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
-                    <div className="wc rf qn zf cp kq xf wf">
-                        {icons.map((icon) => {
-                            return (
-                                <a key={icon.id} href={icon.link} className="rc animate_top">
-                                    <img className="th wl ml il zl om text-center" src={icon.brand} alt="Clients" />
-                                    {/* <img className="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" /> */}
-                                </a>
-                            )
-                        })}
-                    </div>
+                    <Reveal>
+                        <div className="wc rf qn zf cp kq xf wf">
+                            {icons.map((icon) => {
+                                return (
+                                    <a key={icon.id} href={icon.link} className="rc animate_top">
+                                        <img className="th wl ml il zl om text-center" src={icon.brand} alt="Clients" />
+                                        {/* <img className="xc sk ml il zl nm" src="images/brand-dark-01.svg" alt="Clients" /> */}
+                                    </a>
+                                )
+                            })}
+                        </div>
+                    </Reveal>
                 </div>
             </section>
         </div>

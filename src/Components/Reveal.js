@@ -14,7 +14,7 @@ function Reveal(props) {
     }, [isInView])
 
     return (
-        <div ref={ref}>
+        <div ref={ref} style={{ position: 'relative', overflow: 'hidden'}}>
             <motion.div
                 variants={{
                     hidden: { opacity: 0, x: 100 },

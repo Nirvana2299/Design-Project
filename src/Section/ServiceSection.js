@@ -4,6 +4,7 @@ import icon05 from './../images/icon-05.svg'
 import icon06 from './../images/icon-06.svg'
 import icon07 from './../images/icon-07.svg'
 import healthSaftey from './../images/health-and-safety.svg'
+import Reveal from '../Components/Reveal'
 
 function ServiceSection() {
 
@@ -48,20 +49,24 @@ function ServiceSection() {
 
     return (
         <section className="lj tp kr">
-            <div className="animate_top bb ze rj ki xn vq">
-                <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">We Offer The Best Quality Service for You</h2>
-                <p className="bb on/5 wo/5 hq">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
-            </div>
+            <Reveal>
+                <div className="animate_top bb ze rj ki xn vq">
+                    <h2 className="fk vj pr kk wm on/5 gq/2 bb _b">We Offer The Best Quality Service for You</h2>
+                    <p className="bb on/5 wo/5 hq">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
+                </div>
+            </Reveal>
             <div className="bb ze ki xn yq mb en">
                 <div className="wc qf pn xo ng">
 
                     {Services.map((service) => {
                         return (
-                            <div key={service.id} className="animate_top sg oi pi zq ml il am cn _m">
-                                <img className='inline-block' src={service.icon} alt="Icon" />
-                                <h4 className="ek zj kk wm nb _b inline-block ml-3 2xl:ml-4">{service.title}</h4>
-                                <p className='ml-16 2xl:ml-20 inline-block'>{service.discription}</p>
-                            </div>
+                            <Reveal>
+                                <div key={service.id} className="animate_top sg oi pi zq ml il am cn _m">
+                                    <img className='inline-block' src={service.icon} alt="Icon" />
+                                    <h4 className="ek zj kk wm nb _b inline-block ml-3 2xl:ml-4">{service.title}</h4>
+                                    <p className='ml-16 2xl:ml-20 inline-block'>{service.discription}</p>
+                                </div>
+                            </Reveal>
                         )
                     })}
                 </div>

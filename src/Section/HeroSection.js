@@ -31,42 +31,42 @@ function HeroSection() {
 
     return (
         <>
-        <Reveal>
-            <section className="gj do ir hj sp jr i pg">
+            <Reveal>
+                <section className="gj do ir hj sp jr i pg">
 
-                <div className="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
-                    <img src={shape01} alt="shape" className="xc 2xl:ud-block h t -ud-left-[10%] ua" />
-                    <img src={shape02} alt="shape" className="xc 2xl:ud-block h u p va" />
-                    <img src={shape03} alt="shape" className="xc 2xl:ud-block h v w va" />
-                    <img src={shape04} alt="shape" className="h q r" />
-                    <motion.img animate={{ y: 0, opacity: 1 }} initial={{ y: -200, opacity: 0 }} transition={{ type: 'inertia', velocity: 200, duration: 0.4, delay: 0.2 }} src={hero} alt="Woman" className="h q r ua left-20" />
-                </div>
+                    <div className="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
+                        <img src={shape01} alt="shape" className="xc 2xl:ud-block h t -ud-left-[10%] ua" />
+                        <img src={shape02} alt="shape" className="xc 2xl:ud-block h u p va" />
+                        <img src={shape03} alt="shape" className="xc 2xl:ud-block h v w va" />
+                        <img src={shape04} alt="shape" className="h q r" />
+                        <motion.img animate={{ y: 0, opacity: 1 }} initial={{ y: -200, opacity: 0 }} transition={{ type: 'inertia', velocity: 200, duration: 0.4, delay: 0.2 }} src={hero} alt="Woman" className="h q r ua left-20" />
+                    </div>
 
-                <motion.div className="bb ze ki xn 2xl:ud-px-0"
+                    <motion.div className="bb ze ki xn 2xl:ud-px-0"
                     // transition={{ type: 'inertia', velocity: 120, duration: 0.4, delay: 0.2 }}
                     // animate={{ x: 0, opacity: 1 }}
                     // initial={{ x: -100, opacity: 0 }}
-                >
-                    <div className="tc _o">
-                        <div className="animate_left jn/2">
-                            <h1 className="fk vj zp or kk wm wb">We specialize in UI/UX, Web Development, Digital Marketing.
-                            </h1>
-                            <p className="fq">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris.
-                                Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
-                            </p>
-                            <div className="tc tf yo zf mb">
-                                <motion.a animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.4, delay: 0.15 }} href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</motion.a>
-                                <span className="tc sf">
-                                    <a href="#" className="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
-                                    <span className="inline-block">For any question or concern</span>
-                                </span>
+                    >
+                        <div className="tc _o">
+                            <div className="animate_left jn/2">
+                                <h1 className="fk vj zp or kk wm wb">We specialize in UI/UX, Web Development, Digital Marketing.
+                                </h1>
+                                <p className="fq">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla magna mauris.
+                                    Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
+                                </p>
+                                <div className="tc tf yo zf mb">
+                                    <motion.a animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.4, delay: 0.15 }} href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</motion.a>
+                                    <span className="tc sf">
+                                        <a href="#" className="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
+                                        <span className="inline-block">For any question or concern</span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
 
-            </section>
+                </section>
             </Reveal>
 
             <section id="features">
@@ -105,9 +105,12 @@ function HeroSection() {
                     </motion.div>
                 </div>
             </section>
-            <Reveal>
-                <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
-                    <div  className="bb ze ki xn wq">
+
+
+
+            <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
+                <div className="bb ze ki xn wq">
+                    <Reveal>
                         <div className="tc wf gg qq">
 
                             <div className="animate_left xc gn gg jn/2 i">
@@ -139,9 +142,9 @@ function HeroSection() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </Reveal>
+                    </Reveal>
+                </div>
+            </section>
         </>
     )
 }
