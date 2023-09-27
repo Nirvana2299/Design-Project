@@ -54,7 +54,7 @@ function HeroSection() {
                                 Nulla fermentum viverra sem eu rhoncus consequat varius nisi quis, posuere magna.
                             </p>
                             <div className="tc tf yo zf mb">
-                                <motion.a animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.3 }} href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</motion.a>
+                                <motion.a animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 0.4, delay: 0.15 }} href="#" className="ek jk lk gh gi hi rg ml il vc _d _l">Get Started Now</motion.a>
                                 <span className="tc sf">
                                     <a href="#" className="inline-block ek xj kk wm"> Call us (0123) 456 – 789 </a>
                                     <span className="inline-block">For any question or concern</span>
