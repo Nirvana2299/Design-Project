@@ -5,25 +5,28 @@ import icon06 from './../images/icon-06.svg'
 import icon07 from './../images/icon-07.svg'
 import healthSaftey from './../images/health-and-safety.svg'
 import Reveal from '../Components/Reveal'
+import retail from './../images/retail.svg'
+import healthcare from './../images/healthcare.svg'
+import hospitality from './../images/hospitality.svg'
 
 function ServiceSection() {
 
     const Services = [
         {
             id: 1,
-            icon: icon04,
+            icon: hospitality,
             title: 'Crafted for Startups',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
         {
             id: 2,
-            icon: icon05,
+            icon: healthcare,
             title: 'High-quality Design',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
         {
             id: 3,
-            icon: icon06,
+            icon: retail,
             title: 'All Essential Sections',
             discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.'
         },
