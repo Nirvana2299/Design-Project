@@ -31,7 +31,6 @@ function HeroSection() {
 
     return (
         <>
-            <Reveal>
                 <section className="gj do ir hj sp jr i pg">
 
                     <div className="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
@@ -43,9 +42,9 @@ function HeroSection() {
                     </div>
 
                     <motion.div className="bb ze ki xn 2xl:ud-px-0"
-                    // transition={{ type: 'inertia', velocity: 120, duration: 0.4, delay: 0.2 }}
-                    // animate={{ x: 0, opacity: 1 }}
-                    // initial={{ x: -100, opacity: 0 }}
+                    transition={{ type: 'inertia', velocity: 120, duration: 0.4, delay: 0.2 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    initial={{ x: -100, opacity: 0 }}
                     >
                         <div className="tc _o">
                             <div className="animate_left jn/2">
@@ -67,7 +66,6 @@ function HeroSection() {
                     </motion.div>
 
                 </section>
-            </Reveal>
 
             <section id="features">
                 <div className="bb ze ki yn 2xl:ud-px-12.5">
@@ -107,8 +105,7 @@ function HeroSection() {
             </section>
 
 
-
-            <Reveal>
+            <Reveal >
                 <section id='features' className="ji gp uq 2xl:ud-py-35 pg">
                     <div className="bb ze ki xn wq">
                         <div className="tc wf gg qq">
@@ -126,6 +123,7 @@ function HeroSection() {
                                 </div>
                             </div>
 
+
                             <div className="animate_right jn/2">
                                 <div className='pr-12'>
                                     <h4 className="ek yj mk gb">Why Choose Us</h4>
@@ -141,6 +139,7 @@ function HeroSection() {
                                     </a>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>

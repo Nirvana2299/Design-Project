@@ -17,12 +17,12 @@ function Reveal(props) {
         <div ref={ref} style={{ position: 'relative', overflow: 'hidden'}}>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0, x: 100 },
-                    visible: { opacity: 1, x: 0 }
+                    hidden: { opacity: 0, y: 100 },
+                    visible: { opacity: 1, y: 0 }
                 }}
                 initial='hidden'
                 animate={mainControls}
-                transition={{ duration: 0.8, delay: 0.35 }}
+                transition={{ duration: 1, delay: 0.35 }}
             >
                 {props.children}
             </motion.div>
