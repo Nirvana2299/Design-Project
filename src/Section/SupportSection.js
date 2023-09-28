@@ -159,13 +159,13 @@ function SupportSection() {
                                 </p>
                             </Reveal>
                         </div>
-                        <div className="animate_right bf">
-                            <Reveal>
+                        <Reveal>
+                            <div className="animate_right bf">
                                 <a href="#" className="vc ek kk hh rg ol il cm gi hi">
                                     Get Started Now
                                 </a>
-                            </Reveal>
-                        </div>
+                            </div>
+                        </Reveal>
 
                     </div>
                 </div>
